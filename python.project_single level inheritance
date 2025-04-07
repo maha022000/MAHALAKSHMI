@@ -1,0 +1,440 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNaTAGx8UZ+YgudEj85O2lc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/maha022000/MAHALAKSHMI/blob/main/python.project_single%20level%20inheritance\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "2iIJYE95ITUW"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Parent Class for 12th Grade Resume\n",
+        "class Resume12th:"
+      ],
+      "metadata": {
+        "id": "phqjnPd6Ogsr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Resume12th:\n",
+        "#resume_type =12th Grade Resume\"\n",
+        "\n",
+        "    def _init_(self, name, email, phone, year_of_passout, marks, school_name, board):\n",
+        "        self.name = name\n",
+        "        self.email = email\n",
+        "        self.phone = phone\n",
+        "        self.year_of_passout = year_of_passout\n",
+        "        self.marks = marks\n",
+        "        self.school_name = school_name\n",
+        "        self.board = board\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(\"\\n--- 12th Grade Resume ---\")\n",
+        "        print(f\"Resume Type: {Resume12th.resume_type}\")\n",
+        "        print(f\"Name: {self.name}\")\n",
+        "        print(f\"Email: {self.email}\")\n",
+        "        print(f\"Phone: {self.phone}\")\n",
+        "        print(f\"Year of Passout: {self.year_of_passout}\")\n",
+        "        print(f\"Marks: {self.marks}%\")\n",
+        "        print(f\"School: {self.school_name}\")\n",
+        "        print(f\"Board: {self.board}\")"
+      ],
+      "metadata": {
+        "id": "h1ptk3nnOj08"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "   return self  # Method Chaining"
+      ],
+      "metadata": {
+        "id": "53MdIxdoOvHT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Child Class for Degree-Level Resume"
+      ],
+      "metadata": {
+        "id": "lmI-g7lcO-Zn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class DegreeResume(Resume12th):\n",
+        "#resume_type =DegreeResume\n",
+        "    def _init_(self, name, email, phone, year_of_passout, marks, school_name, board,\n",
+        "              degree_name, university, cgpa, specialization, internship, projects):\n",
+        "        super()._init_(name, email, phone, year_of_passout, marks, school_name, board)\n",
+        "        self.degree_name = degree_name\n",
+        "        self.university = university\n",
+        "        self.cgpa = cgpa\n",
+        "        self.specialization = specialization\n",
+        "        self.internship = internship\n",
+        "        self.projects = projects\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()  # Show parent class details\n",
+        "        print(\"\\n--- Degree Resume Details ---\")\n",
+        "        print(f\"Degree: {self.degree_name}\")\n",
+        "        print(f\"University: {self.university}\")\n",
+        "        print(f\"CGPA: {self.cgpa}\")\n",
+        "        print(f\"Specialization: {self.specialization}\")\n",
+        "        print(f\"Internship: {self.internship}\")\n",
+        "        print(f\"Projects: {self.projects}\")"
+      ],
+      "metadata": {
+        "id": "yaQdzViTnMqG"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " return self  # Method Chaining"
+      ],
+      "metadata": {
+        "id": "dIh-lFh4PQZa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " def display(self):\n",
+        "        super().display()  # Show parent class details\n",
+        "        print(\"\\n--- Degree Resume Details ---\")\n",
+        "        print(f\"Degree: {self.degree_name}\")\n",
+        "        print(f\"University: {self.university}\")\n",
+        "        print(f\"CGPA: {self.cgpa}\")\n",
+        "        print(f\"Specialization: {self.specialization}\")\n",
+        "        print(f\"Internship: {self.internship}\")\n",
+        "        print(f\"Projects: {self.projects}\")\n",
+        "        return self  # Method Chaining"
+      ],
+      "metadata": {
+        "id": "QXT5setsnaVm"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "roM681MG8Wez"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "iTka8cgUsAKc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Display full resume\n",
+        ".display()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "ciJrYXuM8eDE",
+        "outputId": "343c053f-122f-4015-ada8-89c59b8d1fe4"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'Resume' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-2-3947db6b577a>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m#Display full resume\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mResume\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdisplay\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'Resume' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# -------------------- Parent Class for 12th Grade Resume --------------------\n",
+        "class Resume12th:\n",
+        "    resume_type = \"12th Grade Resume\"\n",
+        "\n",
+        "    def __init__(self, name, email, phone, year_of_passout, marks, school_name, board):\n",
+        "        self.name = name\n",
+        "        self.email = email\n",
+        "        self.phone = phone\n",
+        "        self.year_of_passout = year_of_passout\n",
+        "        self.marks = marks\n",
+        "        self.school_name = school_name\n",
+        "        self.board = board\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(\"\\n--- 12th Grade Resume ---\")\n",
+        "        print(f\"Resume Type     : {Resume12th.resume_type}\")\n",
+        "        print(f\"Name            : {self.name}\")\n",
+        "        print(f\"Email           : {self.email}\")\n",
+        "        print(f\"Phone           : {self.phone}\")\n",
+        "        print(f\"Year of Passout : {self.year_of_passout}\")\n",
+        "        print(f\"Marks           : {self.marks}%\")\n",
+        "        print(f\"School          : {self.school_name}\")\n",
+        "        print(f\"Board           : {self.board}\")\n",
+        "        return self  # Method Chaining\n",
+        "\n",
+        "\n",
+        "# -------------------- Child Class for Degree-Level Resume --------------------\n",
+        "class DegreeResume(Resume12th):\n",
+        "    def __init__(self, name, email, phone, year_of_passout, marks, school_name, board,\n",
+        "                 degree_name, university, cgpa, specialization, internship, projects):\n",
+        "        super().__init__(name, email, phone, year_of_passout, marks, school_name, board)\n",
+        "        self.degree_name = degree_name\n",
+        "        self.university = university\n",
+        "        self.cgpa = cgpa\n",
+        "        self.specialization = specialization\n",
+        "        self.internship = internship\n",
+        "        self.projects = projects\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()  # Display parent class details first\n",
+        "        print(\"\\n--- Degree Resume Details ---\")\n",
+        "        print(f\"Degree          : {self.degree_name}\")\n",
+        "        print(f\"University      : {self.university}\")\n",
+        "        print(f\"CGPA            : {self.cgpa}\")\n",
+        "        print(f\"Specialization  : {self.specialization}\")\n",
+        "        print(f\"Internship      : {self.internship}\")\n",
+        "        print(f\"Projects        : {self.projects}\")\n",
+        "        return self  # Method Chaining\n",
+        "\n",
+        "\n",
+        "# -------------------- Execution / Example --------------------\n",
+        "student = DegreeResume(\n",
+        "    name=\"Asha Mehta\",\n",
+        "    email=\"asha@example.com\",\n",
+        "    phone=\"9876543210\",\n",
+        "    year_of_passout=2019,\n",
+        "    marks=87,\n",
+        "    school_name=\"Greenwood School\",\n",
+        "    board=\"CBSE\",\n",
+        "    degree_name=\"B.Sc\",\n",
+        "    university=\"National University\",\n",
+        "    cgpa=8.6,\n",
+        "    specialization=\"Mathematics\",\n",
+        "    internship=\"Data Analytics at XYZ Ltd.\",\n",
+        "    projects=\"Data Analysis Tool, Resume Builder App\"\n",
+        ")\n",
+        "\n",
+        "# Display the full resume\n",
+        "student.display()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h6eCaTtz87M4",
+        "outputId": "2ba81db9-bba6-488c-f2b0-71084064bd82"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- 12th Grade Resume ---\n",
+            "Resume Type     : 12th Grade Resume\n",
+            "Name            : Asha Mehta\n",
+            "Email           : asha@example.com\n",
+            "Phone           : 9876543210\n",
+            "Year of Passout : 2019\n",
+            "Marks           : 87%\n",
+            "School          : Greenwood School\n",
+            "Board           : CBSE\n",
+            "\n",
+            "--- Degree Resume Details ---\n",
+            "Degree          : B.Sc\n",
+            "University      : National University\n",
+            "CGPA            : 8.6\n",
+            "Specialization  : Mathematics\n",
+            "Internship      : Data Analytics at XYZ Ltd.\n",
+            "Projects        : Data Analysis Tool, Resume Builder App\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<__main__.DegreeResume at 0x7faced370890>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Parent Class for 12th Grade Resume\n",
+        "class Resume12th:\n",
+        "    resume_type = \"12th Grade Resume\"\n",
+        "\n",
+        "    def __init__(self, name, email, phone, year_of_passout, marks, school_name, board):\n",
+        "        self.name = name\n",
+        "        self.email = email\n",
+        "        self.phone = phone\n",
+        "        self.year_of_passout = year_of_passout\n",
+        "        self.marks = marks\n",
+        "        self.school_name = school_name\n",
+        "        self.board = board\n",
+        "\n",
+        "    def display(self):\n",
+        "        print(\"\\n--- 12th Grade Resume ---\")\n",
+        "        print(f\"Resume Type: {Resume12th.resume_type}\")\n",
+        "        print(f\"Name: {self.name}\")\n",
+        "        print(f\"Email: {self.email}\")\n",
+        "        print(f\"Phone: {self.phone}\")\n",
+        "        print(f\"Year of Passout: {self.year_of_passout}\")\n",
+        "        print(f\"Marks: {self.marks}%\")\n",
+        "        print(f\"School: {self.school_name}\")\n",
+        "        print(f\"Board: {self.board}\")\n",
+        "        return self  # Method Chaining\n",
+        "\n",
+        "\n",
+        "# Child Class for Degree-Level Resume\n",
+        "class DegreeResume(Resume12th):\n",
+        "    def __init__(self, name, email, phone, year_of_passout, marks, school_name, board,\n",
+        "                 degree_name, university, cgpa, specialization, internship, projects):\n",
+        "        super().__init__(name, email, phone, year_of_passout, marks, school_name, board)\n",
+        "        self.degree_name = degree_name\n",
+        "        self.university = university\n",
+        "        self.cgpa = cgpa\n",
+        "        self.specialization = specialization\n",
+        "        self.internship = internship\n",
+        "        self.projects = projects\n",
+        "\n",
+        "    def display(self):\n",
+        "        super().display()  # Show parent class details\n",
+        "        print(\"\\n--- Degree Resume Details ---\")\n",
+        "        print(f\"Degree: {self.degree_name}\")\n",
+        "        print(f\"University: {self.university}\")\n",
+        "        print(f\"CGPA: {self.cgpa}\")\n",
+        "        print(f\"Specialization: {self.specialization}\")\n",
+        "        print(f\"Internship: {self.internship}\")\n",
+        "        print(f\"Projects: {self.projects}\")\n",
+        "        return self  # Method Chaining\n",
+        "\n",
+        "\n",
+        "# Example\n",
+        "student = DegreeResume(\n",
+        "    name=\"Sruthi\",\n",
+        "    email=\"srthi@example.com\",\n",
+        "    phone=\"9876543210\",\n",
+        "    year_of_passout=2020,\n",
+        "    marks=80,\n",
+        "    school_name=\"National Model\",\n",
+        "    board=\"CBSE\",\n",
+        "    degree_name=\"B.Sc\",\n",
+        "    university=\"Bharathi University\",\n",
+        "    cgpa=8.6,\n",
+        "    specialization=\"Mathematics\",\n",
+        "    internship=\"Data Analytics at spill Ltd.\",\n",
+        "    projects=\"Data Analysis Tool, Resume Builder App\"\n",
+        ")\n",
+        "\n",
+        "# Method Chaining in action\n",
+        "student.display()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wGJ9g2pc_FoI",
+        "outputId": "1c7df7e2-397c-4f7e-d909-24f11c84f9b1"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- 12th Grade Resume ---\n",
+            "Resume Type: 12th Grade Resume\n",
+            "Name: Sruthi\n",
+            "Email: srthi@example.com\n",
+            "Phone: 9876543210\n",
+            "Year of Passout: 2020\n",
+            "Marks: 80%\n",
+            "School: National Model\n",
+            "Board: CBSE\n",
+            "\n",
+            "--- Degree Resume Details ---\n",
+            "Degree: B.Sc\n",
+            "University: Bharathi University\n",
+            "CGPA: 8.6\n",
+            "Specialization: Mathematics\n",
+            "Internship: Data Analytics at spill Ltd.\n",
+            "Projects: Data Analysis Tool, Resume Builder App\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<__main__.DegreeResume at 0x7faced355b50>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    }
+  ]
+}
